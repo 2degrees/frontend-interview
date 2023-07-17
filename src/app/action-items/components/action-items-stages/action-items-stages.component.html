@@ -1,0 +1,26 @@
+<div class="stages">
+  <div class="stage" style="--bg: #fffde7">
+    <h2>Committed ({{ pendingCount$ | async }})</h2>
+    <fi-action-item-card
+      *ngFor="let action of pendingItems$ | async; trackBy: trackAction"
+      [actionItem]="action"
+      stage="pending"
+    />
+  </div>
+  <div class="stage" style="--bg: #e1f5fe">
+    <h2>Progressing ({{ inProgressCount$ | async }})</h2>
+    <fi-action-item-card
+      *ngFor="let action of inProgressItems$ | async; trackBy: trackAction"
+      [actionItem]="action"
+      stage="inProgress"
+    />
+  </div>
+  <div class="stage" style="--bg: #f1f8e9">
+    <h2>Complete ({{ completeCount$ | async }})</h2>
+    <fi-action-item-card
+      *ngFor="let action of completeItems$ | async; trackBy: trackAction"
+      [actionItem]="action"
+      stage="complete"
+    />
+  </div>
+</div>

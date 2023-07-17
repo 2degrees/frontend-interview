@@ -1,0 +1,29 @@
+<div class="card">
+  <h4 data-testid="title">{{ actionItem.title }}</h4>
+  <span class="align-right" data-testid="cost-saving">{{
+    formatCostSaving(actionItem.costSaving)
+  }}</span>
+  <span class="grid-full-width align-right" data-testid="payback-period">{{
+    formatPaybackPeriod(actionItem.paybackMonths)
+  }}</span>
+  <span>
+    <button
+      *ngIf="previousStage"
+      type="button"
+      (click)="gotoPreviousStage()"
+      data-testid="previous-action"
+    >
+      &laquo;
+    </button>
+  </span>
+  <span class="align-right">
+    <button
+      *ngIf="nextStage"
+      type="button"
+      (click)="gotoNextStage()"
+      data-testid="next-action"
+    >
+      &raquo;
+    </button></span
+  >
+</div>
