@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ActionItemsStagesComponent } from './action-items/components/action-items-stages/action-items-stages.component';
+import { ActionItemsSummaryComponent } from './action-items/components/action-items-summary/action-items-summary.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent],
-  selector: 'frontend-interview-root',
+  imports: [ActionItemsStagesComponent, ActionItemsSummaryComponent],
+  selector: 'fi-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent {
-  title = 'frontend-interview';
-}
+export class AppComponent {}

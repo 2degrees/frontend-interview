@@ -2,7 +2,7 @@
   "name": "frontend-interview",
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "frontend-interview",
+  "prefix": "fi",
   "sourceRoot": "./src",
   "tags": [],
   "targets": {

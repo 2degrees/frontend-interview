@@ -1,0 +1,22 @@
+.card {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0.25rem;
+  border: 1px solid rgba(100, 100, 100, 0.7);
+  padding: 0.25rem;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.5rem;
+}
+
+.card h4 {
+  margin: 0;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.grid-full-width {
+  grid-column-start: 2;
+}
