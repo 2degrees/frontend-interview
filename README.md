@@ -26,7 +26,7 @@ The product team have provided the following acceptance tests:
 1. An "in progress" action can be moved back to "pending" via the previous (left arrow) button
 1. An "in progress" action can be moved to "complete" via the next (right arrow) button
 1. A "complete" action can be moved back to "in progress" via the previous (left arrow) button
-1. A summary of the savings is dismayed showing the proportion of the sum of completed cost savings relative to the committed cost-savings
+1. A summary of the savings is displayed showing the proportion of the sum of completed cost savings relative to the total potential savings
 1. Each action card displays the title of the action
 1. Each action card displays the cost saving of that action using the following rules:
    - Values up to 1,000 should display as US$ _number_
