@@ -17,7 +17,7 @@ import { map } from 'rxjs/operators';
 })
 export class ActionItemsStagesComponent implements OnInit {
   // TODO 4: review the design of this component - could it be simplified -
-  // - it feels like there's a lot of repeatition
+  // - it feels like there's a lot of repetition
 
   readonly pendingItems$ = this.store.pipe(
     select(selectActionItems('pending'))

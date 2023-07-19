@@ -48,7 +48,7 @@ The product team have provided the following acceptance tests:
 _You can search the codebase for the numbered `TODO n` item to find the code referred to_
 
 1. [ ] Implement summary component + tests (all the data is in the store already) `TODO 1`
-1. [ ] Fix the code around the payback period. The test is correct, but failing `TODO 2`
+1. [ ] Fix the code around the payback period formatting. The test is correct, but failing `TODO 2`
 1. [ ] Please could you provide feedback on how I implemented the cost saving tests. I'm not that happy with them yet `TODO 3`
 1. [ ] Review the code in the action-items-stages component (both TypeScript and HTML) to see whether this could be simplified `TODO 4`
 1. [ ] Re-work the loading of the actions to use an API client (discuss an approach from a high-level - no actual implementation required) `TODO 5`
