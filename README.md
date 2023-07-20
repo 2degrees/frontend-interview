@@ -8,34 +8,7 @@ You need to work together to decide how to finish this piece of work and follow-
 
 ### Requirements from product
 
-#### Design
-
-The design team have provided this design for how the page should appear.
-
-Your colleague has already completed this aspect -- you don't need to worrying about any visual aspects unless you wish to make some suggestions on the CSS code!
-
-![Design](design.png)
-
-#### Acceptance tests
-
-The product team have provided the following acceptance tests:
-
-1. The actions are displayed in the appropriate status (pending, in progress, complete)
-1. There is a count of the number of actions in the column
-1. A "pending" action can be moved to "in progress" via the next (right arrow) button
-1. An "in progress" action can be moved back to "pending" via the previous (left arrow) button
-1. An "in progress" action can be moved to "complete" via the next (right arrow) button
-1. A "complete" action can be moved back to "in progress" via the previous (left arrow) button
-1. A summary of the savings is displayed showing the proportion of the sum of completed cost savings relative to the total potential savings
-1. Each action card displays the title of the action
-1. Each action card displays the cost saving of that action using the following rules:
-   - Values up to 1,000 should display as US$ _number_
-   - Values between 1,000 and less than 1,000,000 should display as US$ *thousands*k with 3 significant figures displayed
-   - Values from 1,000,000 upwards should display as US$ *millions*m with 3 significant figures displayed
-1. Each action card displays the payback period of the action using the following rules:
-   - Values less than 1 year (12 months) should display as *months*m (e.g. 10m for 10 months)
-   - Values greater than 1 year should display in the form *x*y, *y*m where _x_ is the number of years and _y_ the number of months, e.g. an 18 month payback period should be displayed as _1y, 6m_.
-   - For any whole year payback periods, these should display simply as \_x*y, e.g. a 12 month payback should appear as \_1y* and a 24 month payback should appear as _2y_.
+If you need further information, [see here](https://github.com/2degrees/frontend-interview/blob/main/product-requirements.md).
 
 ### Handover from your colleague
 
@@ -47,11 +20,10 @@ The product team have provided the following acceptance tests:
 
 _You can search the codebase for the numbered `TODO n` item to find the code referred to_
 
-1. [ ] Implement summary component + tests (all the data is in the store already) `TODO 1`
-1. [ ] Fix the code around the payback period formatting. The test is correct, but failing `TODO 2`
-1. [ ] Please could you provide feedback on how I implemented the cost saving tests. I'm not that happy with them yet `TODO 3`
-1. [ ] Review the code in the action-items-stages component (both TypeScript and HTML) to see whether this could be simplified `TODO 4`
-1. [ ] Re-work the loading of the actions to use an API client (discuss an approach from a high-level - no actual implementation required) `TODO 5`
+1. [ ] Implement summary [component](https://github.com/2degrees/frontend-interview/blob/main/src/app/action-items/components/action-items-summary/action-items-summary.component.html#L3) + tests (all the data is in the store already) `TODO 1`
+1. [ ] [Fix the code](https://github.com/2degrees/frontend-interview/blob/main/src/app/action-items/components/action-item-card/action-item-card.component.ts) around the payback period formatting. The test is correct, but failing `TODO 2`
+1. [ ] Please could you provide feedback on [how I implemented the cost saving tests](https://github.com/2degrees/frontend-interview/blob/main/src/app/action-items/components/action-item-card/action-item-card.component.spec.ts). I'm not that happy with them yet `TODO 3`
+1. [ ] Review the code in the [action-items-stages component](https://github.com/2degrees/frontend-interview/blob/main/src/app/action-items/components/action-items-stages/action-items-stages.component.ts) (both TypeScript and HTML) to see whether this could be simplified `TODO 4`
 
 ## How to work with the code
 
