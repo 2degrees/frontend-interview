@@ -53,8 +53,6 @@ describe('ActionItemCardComponent', () => {
     });
 
     describe('cost savings', () => {
-      // TODO 3: provide feedback on these tests
-
       it('should render a cost in US$ < 1000 as is', () => {
         setCost(999);
         assertCost('US$999');
@@ -104,7 +102,6 @@ describe('ActionItemCardComponent', () => {
       });
 
       it('should display 12 months as 1y', () => {
-        // TODO 2: this test is how the code should work - adjust the code to make this pass
         setPaybackPeriod(12);
         assertPaybackPeriod('1y');
       });
@@ -239,7 +236,6 @@ class ActionItemCardHost {
 class ActionItemPage {
   constructor(private readonly fixture: ComponentFixture<ActionItemCardHost>) {}
 
-  // TODO: improve this return type to respect `failIfNotFound`
   getElementByTestId(
     testId: string,
     failIfNotFound = true
@@ -253,7 +249,6 @@ class ActionItemPage {
     return element ?? null;
   }
 
-  // TODO: improve this return type to respect `failIfNotFound`
   getTextContentByTestId(testId: string, failIfNotFound = true): string | null {
     return (
       this.getElementByTestId(testId, failIfNotFound)?.nativeElement

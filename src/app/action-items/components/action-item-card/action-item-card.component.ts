@@ -59,7 +59,6 @@ export class ActionItemCardComponent implements OnChanges {
       return `${paybackMonths}m`;
     } else {
       const years = Math.floor(paybackMonths / 12);
-      // TODO 2: cater for whole year case, i.e. don't render "1y, 0m", but present "1y"
       const months = paybackMonths % 12;
       return `${years}y, ${months}m`;
     }
