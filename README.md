@@ -45,9 +45,17 @@ The product team have provided the following acceptance tests:
 
 ## How to work with the code
 
+### Requirements
+
+You need to install the dependencies with [`npm`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm):
+
+```
+$ npm install
+```
+
 ### Start the app
 
-To start the development server run `nx serve frontend-interview`. Open your browser and navigate to http://localhost:4200/. Happy coding!
+To start the development server run `npx nx serve frontend-interview`. Open your browser and navigate to http://localhost:4200/. Happy coding!
 
 ### Running tests
 
@@ -61,6 +69,6 @@ $ npm test
 
 If you happen to use Nx plugins, you can leverage code generators that might come with it.
 
-Run `nx list` to get a list of available plugins and whether they have generators. Then run `nx list <plugin-name>` to see what generators are available.
+Run `npx nx list` to get a list of available plugins and whether they have generators. Then run `npx nx list <plugin-name>` to see what generators are available.
 
 Learn more about [Nx generators on the docs](https://nx.dev/plugin-features/use-code-generators).
